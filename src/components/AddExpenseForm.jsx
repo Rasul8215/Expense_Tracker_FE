@@ -17,7 +17,7 @@ const AddExpenseForm = ({ show, setShowAddExpenseForm }) => {
 
   const handleSubmit = async () => {
     const response = await axios.post(
-      "http://localhost:3000/api/expenses",
+      "http://expensetracker.rasul8215.repl.co/api/expenses",
       {
         amount,
         title,

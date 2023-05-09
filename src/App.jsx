@@ -19,7 +19,7 @@ function App() {
 
   useEffect(() => {
     const getAllExpenses = async () => {
-      const response = await axios.get("http://localhost:3000/api/expenses", {
+      const response = await axios.get("http://expensetracker.rasul8215.repl.co/api/expenses", {
         headers: {
           Authorization: `Bearer ${currentUser.token}`,
         },

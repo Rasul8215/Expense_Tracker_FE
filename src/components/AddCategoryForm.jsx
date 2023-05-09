@@ -12,7 +12,7 @@ const AddCategoryForm = ({ show, setShowAddCategoryForm }) => {
 
   const handleSubmit = async () => {
     const response = await axios.post(
-      "http://localhost:3000/api/categories",
+      "http://expensetracker.rasul8215.repl.co/api/categories",
       { title, description },
       {
         headers: {

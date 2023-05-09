@@ -22,7 +22,7 @@ export const AuthProvider = ({ children }) => {
   }, []);
 
   const signup = async (name, username, password) => {
-    const response = await axios.post("http://localhost:3000/api/auth/signup", {
+    const response = await axios.post("http://expensetracker.rasul8215.repl.co/api/auth/signup", {
       name,
       username,
       password,
@@ -36,7 +36,7 @@ export const AuthProvider = ({ children }) => {
   };
 
   const signin = async (username, password) => {
-    const response = await axios.post("http://localhost:3000/api/auth/signin", {
+    const response = await axios.post("http://expensetracker.rasul8215.repl.co/api/auth/signin", {
       username,
       password,
     });
