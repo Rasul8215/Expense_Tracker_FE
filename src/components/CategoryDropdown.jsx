@@ -11,7 +11,7 @@ const CategoryDropdown = ({ selectedLabels, setSelectedLabels }) => {
   const {currentUser}=useAuth()
   useEffect(() => {
     const getAllCategories = async () => {
-      const response = await axios.get("http://expensetracker.rasul8215.repl.co/api/categories", {
+      const response = await axios.get("https://expense-tracker1-beta.vercel.app/api/categories", {
         headers: {
           Authorization:
           `Bearer ${currentUser.token}`

@@ -12,7 +12,7 @@ const AddCategoryForm = ({ show, setShowAddCategoryForm }) => {
 
   const handleSubmit = async () => {
     const response = await axios.post(
-      "http://expensetracker.rasul8215.repl.co/api/categories",
+      "https://expense-tracker1-beta.vercel.app/api/categories",
       { title, description },
       {
         headers: {

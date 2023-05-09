@@ -19,7 +19,7 @@ function App() {
 
   useEffect(() => {
     const getAllExpenses = async () => {
-      const response = await axios.get("http://expensetracker.rasul8215.repl.co/api/expenses", {
+      const response = await axios.get("https://expense-tracker1-beta.vercel.app/api/expenses", {
         headers: {
           Authorization: `Bearer ${currentUser.token}`,
         },

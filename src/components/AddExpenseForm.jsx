@@ -17,7 +17,7 @@ const AddExpenseForm = ({ show, setShowAddExpenseForm }) => {
 
   const handleSubmit = async () => {
     const response = await axios.post(
-      "http://expensetracker.rasul8215.repl.co/api/expenses",
+      "https://expense-tracker1-beta.vercel.app/api/expenses",
       {
         amount,
         title,
